@@ -77,7 +77,7 @@ function draw() {
   textSize(20)
   if(gameState === "start"){
     background("white");
-    text("Welcome to this Plinko game, in which you will able to rank up points to win. The \n game is simple all you have to do is press the up arrow, and the game will begin, \n move your mouse left and right, and every few seconds a ball will fall, at a position, \n aligned to your mouse, the point value of the boxes are random so you will need a bit \n of luck  to win. To win you must gain upwards of 2500 points.", 30, 330)
+    text("Welcome to this Plinko game, in which you will able to rank up points to win. The \n game is simple all you have to do is press the up arrow, and the game will begin, \n move your mouse left and right, and every few seconds a ball will fall, at a position, \n aligned to your mouse, the point value of the boxes are random so you will need a bit \n of luck  to win. To win you must gain upwards of 2500 points. You have 10 balls, begin!", 30, 330)
     console.log("hello")
     if(gs === 1){
       gameState = "play"
@@ -87,7 +87,7 @@ function draw() {
   console.log("goodbye")
   background("black");
   text("Score : "+score,20,30);
-  text("Xpos: "+ mouseX +"yPos: "+ mouseY,500,40);
+  //text("Xpos: "+ mouseX +"yPos: "+ mouseY,500,40);
 
   text(div1val, (divx[0]+divx[1])/4, divy)
   text(div2val, (divx[2]+divx[3])/2.1, divy)
